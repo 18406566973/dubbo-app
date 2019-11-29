@@ -1,0 +1,45 @@
+1.微服务架构
+      思想：微服务架构是每个小的功能即可作为一个小的系统，
+	系统之间的调用采用RPC协议来调用
+	RPC的调用过程的效率可以和你自己调用自己写的方法的效率基本一致。
+	restful api : 1000倍
+	必然是分布式的
+	优点：
+	    便于实现分布式
+	    便于部署和维护
+	    便于做集群
+      基于RPC思想的框架：
+	Spring cloud : 全家桶
+	GRPC：
+	Thrift：
+	Dubbo：九死一生 
+ 
+     微服务基础：
+	SpringBoot: 它的项目可以单独运行（jar）,所以可见SpringBoot很方便的可以架构分布式，集群
+2.微服务分布式框架：
+   Dubbo
+3.采用分布式模块化的开发
+   （1）.搭建注册中心
+	zookeeper ：服务的注册，发现，订阅管理等工作  端口号：2181
+	zkui:查看注册中心状态
+	    https://github.com/DeemOpen/zkui
+	dubbo-admin
+
+     (2）.写服务器端项目
+	3个项目 
+	 api接口   （RPC interface）
+	consumer消费者（客户端）项目	
+	provider：服务提供者
+   （3）.IDEA模块化开发三个项目
+	父子项目的问题
+	Maven项目管理中的jar包继承的问题
+
+
+
+
+
+
+
+
+
+	
